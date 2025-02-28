@@ -7,12 +7,39 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+button{
+  border: none;
+  background-color: #4E75FF;
+  width: 91px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-style: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 4%;
+  color: floralwhite;
+}
+
+.text-search{
+  font-style: Montserrat;
+  width: 272px;
+  height: 36px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+  color: #808080;
+  border-color: #bababa;
+  padding: 0px 16px;
+}
+ .search-form{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  position: absolute;
+  
+ }
