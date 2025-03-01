@@ -12,7 +12,7 @@ import { imageTemplate } from './render-functions';
 export const refs = {
   form: document.querySelector('.search-form'),
   input: document.querySelector('#input'),
-  button: document.querySelector('.search-button'),
+  button: document.querySelector('button-search'),
   gallery: document.querySelector('.gallery'),
   loader: document.querySelector('.loader-box'),
 };
@@ -25,7 +25,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
 
 export function createImages(query) {
   const BASE_URL = 'https://pixabay.com/api/';
-  const API_KEY = '49003886-a24f9c3a0fd607f8ed8b1fc56';
+  const API_KEY = '49126238-069e1a94ee3ccc35c34a34de0';
   const params = {
     key: API_KEY,
     q: query,

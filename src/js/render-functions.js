@@ -3,7 +3,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { refs } from './pixabay-api';
 
-function imageTemplate(img) {
+export function imageTemplate(img) {
   const {
     largeImageURL,
     webformatURL,
@@ -47,7 +47,6 @@ export function hideLoader() {
 }
 
 export function imagesTemplate(arr) {
-  lightbox.refresh();
   hideLoader();
   return arr.map(imageTemplate).join('');
 }
