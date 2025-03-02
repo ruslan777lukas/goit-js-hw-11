@@ -1,12 +1,13 @@
 //запити на бєкенд
 import axios from 'axios';
+import { imageTemplate } from './render-functions';
 import { imagesTemplate } from './render-functions';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { hideLoader } from './render-functions';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import { imageTemplate } from './render-functions';
+
 
 
 export const refs = {

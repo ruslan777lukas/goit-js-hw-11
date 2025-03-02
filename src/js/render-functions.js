@@ -3,6 +3,11 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { refs } from './pixabay-api';
 
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
+
 export function imageTemplate(img) {
   const {
     largeImageURL,
@@ -31,10 +36,7 @@ export function imageTemplate(img) {
   return markup;
 }
 
-const lightbox = new SimpleLightbox('.gallery a', {
-  captionsData: 'alt',
-  captionDelay: 250,
-});
+
 
 export function showLoader() {
   refs.gallery.classList.add('hidden');
