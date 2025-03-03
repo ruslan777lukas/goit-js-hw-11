@@ -61,7 +61,7 @@ button:hover {
   display: none;
 }
 
-.loader-box {
+.loader {
   margin-block: 48px;
   text-align: center;
 }
