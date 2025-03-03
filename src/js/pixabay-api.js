@@ -8,9 +8,6 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { hideLoader } from './render-functions';
 
-
-
-
 export const refs = {
   form: document.querySelector('.search-form'),
   input: document.querySelector('#input'),
@@ -19,11 +16,10 @@ export const refs = {
   loader: document.querySelector('.loader-box'),
 };
 
-const lightbox = new SimpleLightbox('.gallery a', {
+let lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
-
 
 export function createImages(query) {
   const BASE_URL = 'https://pixabay.com/api/';
@@ -47,9 +43,9 @@ export function createImages(query) {
       } else {
         refs.input.value = '';
         const markup = imagesTemplate(data.hits);
-
         refs.gallery.innerHTML = markup;
         hideLoader();
+        lightbox.refresh();
       }
     })
 

@@ -1,6 +1,6 @@
-button{
+button {
   border: none;
-  background-color: #4E75FF;
+  background-color: #4e75ff;
   width: 91px;
   height: 40px;
   border-radius: 8px;
@@ -13,7 +13,7 @@ button{
   color: floralwhite;
 }
 
-.text-search{
+.text-search {
   font-style: Montserrat;
   width: 272px;
   height: 36px;
@@ -26,29 +26,30 @@ button{
   border-color: #bababa;
   padding: 0px 16px;
 }
- .search-form{
+.search-form {
   display: flex;
   flex-direction: row;
   gap: 8px;
   margin-bottom: 0px;
   align-items: center;
-  justify-content: center;  
- }
+  justify-content: center;
+}
 
- .gallery{
+.gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   width: 100%;
- }
+}
 
- .gallery-image{
+.gallery-image {
   width: 280px;
   height: 187px;
- }
+}
 
- input:hover, textarea:hover {
+input:hover,
+textarea:hover {
   border: 1px solid #000;
 }
 
@@ -67,10 +68,10 @@ button:hover {
 
 .photo-card {
   width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1.5px solid indigo;
+  border-radius: 4px;
   overflow: hidden;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 10px rgba(133, 97, 97, 0.1);
   background-color: #fff;
 }
 
@@ -78,12 +79,10 @@ button:hover {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  
 }
 
 .info {
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
+  color: indigo;
 }
-
-
