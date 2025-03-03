@@ -9,7 +9,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 import { hideLoader } from './render-functions';
 
 export const refs = {
-  form: document.querySelector('.search-form'),
+  form: document.querySelector('.form'),
   input: document.querySelector('#input'),
   button: document.querySelector('button-search'),
   gallery: document.querySelector('.gallery'),
