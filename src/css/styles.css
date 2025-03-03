@@ -26,7 +26,7 @@ button {
   border-color: #bababa;
   padding: 0px 16px;
 }
-.search-form {
+.form {
   display: flex;
   flex-direction: row;
   gap: 8px;
