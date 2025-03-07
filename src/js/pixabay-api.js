@@ -13,7 +13,7 @@ export const refs = {
   input: document.querySelector('#input'),
   button: document.querySelector('button-search'),
   gallery: document.querySelector('.gallery'),
-  loader: document.querySelector('.loader'),
+  loader: document.querySelector('.loader-text'),
 };
 
 let lightbox = new SimpleLightbox('.gallery a', {
