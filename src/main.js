@@ -10,12 +10,13 @@ refs.form.addEventListener('submit', e => {
   showLoader();
 
   if (!query) {
+    hideLoader();
     iziToast.error({
       title: 'Error',
       message: 'Please enter a search query.',
       position: 'topRight',
     });
-    hideLoader();
+    refs.gallery.classList.add('hidden');
     return;
   }
   createImages(query);

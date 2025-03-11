@@ -40,6 +40,8 @@ export function createImages(query) {
           message: `No images found for your search.`,
           position: 'topRight',
         });
+        hideLoader();
+        refs.gallery.classList.add('hidden');
       } else {
         refs.input.value = '';
         const markup = imagesTemplate(data.hits);
